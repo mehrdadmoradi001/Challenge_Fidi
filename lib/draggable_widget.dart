@@ -25,7 +25,7 @@ class _DraggableWidgetHomeState extends State<DraggableWidgetHome> {
 
   @override
   Widget build(BuildContext context) {
-    var random =  Random().nextInt(listImage.length);
+    var random = Random().nextInt(listImage.length);
 
     return Scaffold(
       body: Stack(
@@ -38,7 +38,7 @@ class _DraggableWidgetHomeState extends State<DraggableWidgetHome> {
                 left = max(0, left + details.delta.dx);
                 top = max(0, top + details.delta.dy);
                 onHorizontalDragUpdate:
-                (details) {
+                    (details) {
                   double sensitivity = 1;
                   if (details.delta.dx > sensitivity) {
                     // Right Swipe
@@ -47,7 +47,7 @@ class _DraggableWidgetHomeState extends State<DraggableWidgetHome> {
                   }
                 };
                 onVerticalDragUpdate:
-                (details) {
+                    (details) {
                   double sensitivity = 1;
                   if (details.delta.dy > sensitivity) {
                     // Down Swipe
@@ -60,8 +60,7 @@ class _DraggableWidgetHomeState extends State<DraggableWidgetHome> {
               },
 
               onTap: () {
-                setState(() {
-                });
+                setState(() {});
               },
               child: Container(
                 height: 170,
