@@ -58,7 +58,7 @@ class _DraggableWidgetHomeState extends State<DraggableWidgetHome> {
 
                 setState(() {});
               },
-              //
+
               onTap: () {
                 setState(() {
                 });
